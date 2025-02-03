@@ -1,0 +1,121 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh; /* Заполняет всю высоту окна браузера */
+  text-align: center;
+  padding: 20px;
+  background-color: rgb(228, 204, 234); /* Светлый фон для контраста */
+}
+.react-datepicker__day--highlighted-green {
+  background-color: #4CAF50;
+  color: white;
+}
+.react-datepicker__day--highlighted-red {
+  background-color: #F44336;
+  color: white;
+}
+.react-datepicker__day--highlighted {
+  border-radius: 50%;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+.legend-free {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background-color: #4CAF50;
+  margin-right: 5px;
+  margin-left: 80px;
+}
+.legend-booked {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background-color: #F44336;
+  margin-right: 5px;
+  margin-left: 80px;
+}
+/* Исправление отображения календаря */
+.react-datepicker-wrapper {
+  z-index: 1000;
+  position: relative;
+}
+.title {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+.gallery {
+  display: grid; /* Применяем CSS-сетку */
+  grid-template-columns: repeat(2, 1fr); /* Два столбца */
+  gap: 20px; /* Расстояние между изображениями */
+  justify-items: center; /* Центруем изображения */
+  margin-bottom: 20px;
+}
+.image {
+  width: 400px; /* Фиксированная ширина */
+  height: 400px; /* Фиксированная высота */
+  object-fit: cover; /* Изображение заполняет контейнер */
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+.description {
+  margin-bottom: 20px;
+  font-size: 1.2rem;
+  color: #555;
+}
+.bedSelection {
+  margin-bottom: 20px;
+}
+.bed {
+  margin-right: 10px;
+}
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.input {
+  margin: 10px 0;
+  padding: 5px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+.legend {
+  margin-bottom: 10px;
+  font-size: 0.9rem;
+  color: #777;
+}
+.legend-free {
+  background-color: green;
+  width: 10px;
+  height: 10px;
+  display: inline-block;
+  margin-right: 5px;
+}
+.legend-booked {
+  background-color: red;
+  width: 10px;
+  height: 10px;
+  display: inline-block;
+  margin-right: 5px;
+}
+.total {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+.button {
+  padding: 10px 20px;
+  font-size: 1rem;
+  color: #fff;
+  background-color: violet;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+.button:hover {
+  background-color: #6111A2;
+}

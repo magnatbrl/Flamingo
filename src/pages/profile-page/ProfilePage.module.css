@@ -1,0 +1,112 @@
+
+.container {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: rgb(228, 204, 234);
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: left;
+}
+
+.heading {
+  font-size: 14px;
+  margin-bottom: 20px;
+  color: #333;
+  text-align: left;
+}
+
+.paragraph {
+  margin: 10px 0;
+  font-size: 16px;
+  color: #555;
+  text-align: left; 
+}
+
+.editIcon {
+  margin-left: 10px;
+  cursor: pointer;
+  font-size: 14px;
+  color: #007bff;
+  transition: color 0.3s;
+}
+
+.editIcon:hover {
+  color: #0056b3;
+}
+
+.inputField {
+  margin: 5px 0;
+  padding: 8px;
+  width: calc(100% - 20px);
+  font-size: 20px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+.button {
+  margin: 10px 5px;
+  padding: 8px 12px;
+  font-size: 20px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.saveButton {
+  background-color: violet;
+  color: #fff;
+  border-radius: 5px;
+  margin: 10px;
+}
+
+.saveButton:hover {
+  background-color:  rgb(67, 14, 67);
+}
+
+.cancelButton {
+  background-color: violet;
+  color: #fff;
+  border-radius: 5px;
+}
+
+.cancelButton:hover {
+  background-color: rgb(67, 14, 67);
+}
+
+.clearButton {
+  background-color: #c107ff;
+  color: #fff;
+  margin-top: 20px;
+  border-radius: 5px;
+}
+
+.clearButton:hover {
+  background-color: #e462dd;
+}
+
+.ulList {
+  list-style: none;
+  padding: 0;
+}
+
+.liItem {
+  margin-bottom: 10px;
+  padding: 10px;
+  background-color: #e9ecef;
+  border-radius: 6px;
+}
+
+.subheading {
+  margin-top: 30px;
+  font-size: 20px;
+  color: #333;
+}
+
+.chatContainer {
+  margin-top: 20px;
+}
+h3 {
+  font-size: 14px;
+  margin-bottom: 5%;
+}

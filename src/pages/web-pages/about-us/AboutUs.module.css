@@ -1,0 +1,54 @@
+.aboutPage {
+  font-family: Arial, sans-serif;
+  padding: 20px;
+  max-width: 800px;
+  margin: 0 auto;
+  line-height: 1.6;
+  color: #333;
+  max-width: 800px;
+  background-color: rgb(228, 204, 234);
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: left;
+}
+
+.aboutPage h1,
+.aboutPage h2 {
+  color: #007bff;
+  margin-bottom: 15px;
+}
+
+.aboutPage p {
+  margin-bottom: 15px;
+}
+
+.aboutPage ul {
+  list-style: none;
+  padding: 0;
+}
+
+.aboutPage ul li {
+  margin: 10px 0;
+  display: flex;
+  align-items: center;
+}
+
+.aboutPage ul li::before {
+  content: '✔️';
+  margin-right: 10px;
+  color: #28a745;
+}
+
+.cta {
+  text-align: center;
+  margin-top: 20px;
+  padding: 15px;
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+}
+
+.cta p {
+  font-size: 1.2em;
+  font-weight: bold;
+}

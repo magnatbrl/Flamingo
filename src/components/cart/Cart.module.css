@@ -1,0 +1,334 @@
+/*
+/* .container {
+  max-height: calc(100vh - 100px);
+  /* Высота страницы с учетом футера
+  overflow-y: auto;
+  /* Разрешаем прокрутку по вертикали
+  padding-bottom: 100px;
+  /* Добавляем место для футера
+}
+
+
+
+
+.title {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.empty {
+  font-size: 18px;
+  color: #666;
+  text-align: center;
+}
+
+.list {
+  list-style: none;
+  padding: 0;
+}
+
+.item {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 20px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.image {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+.details {
+  flex: 1;
+}
+
+.removeButton {
+  background-color: #ff4d4d;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 5px 10px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.removeButton:hover {
+  background-color: #cc0000;
+}
+
+.summary {
+  text-align: right;
+  margin-top: 20px;
+}
+
+.clearButton {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.clearButton:hover {
+  background-color: #0056b3;
+}
+
+.checkoutButton {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.checkoutButton:hover {
+  background-color: #0056b3;
+
+} */
+
+/* 
+.title {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  margin-left: 180px;
+}
+
+.gallery {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+  margin-left: 80px;
+}
+
+.image {
+  width: 150px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  margin-left: 80px;
+}
+
+.description {
+  font-size: 16px;
+  margin-bottom: 20px;
+  margin-left: 80px;
+}
+
+.price {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  margin-left: 80px;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-bottom: 20px;
+  margin-left: 80px;
+
+}
+
+.input {
+  padding: 8px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-left: 80px;
+}
+
+.button {
+  padding: 10px 20px;
+  font-size: 16px;
+  color: white;
+  background-color: #7b2fad;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-left: 80px;
+  margin-top: 20px;
+}
+
+.button:hover {
+  background-color: #d07fe0;
+}
+
+Основной контейнер страницы
+.container {
+  max-height: calc(100vh - 100px);
+  /* Высота страницы с учетом футера 
+  overflow-y: auto;
+  /* Разрешаем прокрутку по вертикали 
+  padding-bottom: 100px;
+  /* Добавляем место для футера 
+  margin-left: 80px;
+}
+*/
+
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh; /* Заполняет всю высоту окна браузера */
+  text-align: center;
+  padding: 20px;
+  background-color: rgb(228, 204, 234) /* Светлый фон для контраста */
+}
+
+.title {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.image {
+  max-width: 100px;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.description {
+  margin-bottom: 20px;
+  font-size: 1.2rem;
+  color: #555;
+  
+}
+
+.bedSelection {
+  margin-bottom: 20px;
+}
+
+.bed {
+  margin-right: 10px;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.input {
+  margin: 10px 0;
+  padding: 5px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.legend {
+  margin-bottom: 10px;
+  font-size: 0.9rem;
+  color: #777;
+}
+
+.legend-free {
+  background-color: green;
+  width: 10px;
+  height: 10px;
+  display: inline-block;
+  margin-right: 5px;
+}
+
+.legend-booked {
+  background-color: red;
+  width: 10px;
+  height: 10px;
+  display: inline-block;
+  margin-right: 5px;
+}
+
+.total {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+/* .button {
+  padding: 10px 20px;
+  font-size: 1rem;
+  color: #fff;
+  background-color: #007bff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.button:hover {
+  background-color: #0056b3;
+} */
+.removeButton {
+  background-color: violet;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 5px 10px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.removeButton:hover {
+  background-color: #6111a2;
+}
+
+.summary {
+  text-align: right;
+  margin-top: 20px;
+}
+
+.clearButton {
+  background-color: violet;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.clearButton:hover {
+  background-color: #6111a2;
+}
+
+.checkoutButton {
+  background-color: violet;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 16px;
+  margin: 20px;
+}
+
+.checkoutButton:hover {
+  background-color: #6111a2;
+
+} 
+
+

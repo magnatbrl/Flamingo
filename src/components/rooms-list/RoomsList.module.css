@@ -1,0 +1,39 @@
+.bedsContainer {
+  background-color: antiquewhite;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+  flex-direction: column;
+  margin: 24px;
+
+  padding: 8px;
+  border-radius: 16px;
+}
+
+.roomsContainer {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+  flex-direction: column;
+  margin: 24px;
+  padding: 24px;
+  border-radius: 16px;
+
+}
+
+.roomItem{
+  background-color: lightpink;
+  padding: 10px;
+}
+
+.bedItem{
+  background-color: lightpink;
+  padding: 10px;
+}
+
+.img {
+  width: 20%;
+  height: 20%;
+  object-fit: cover;
+  border-radius: 16px;
+}

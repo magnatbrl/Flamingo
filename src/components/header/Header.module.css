@@ -1,0 +1,148 @@
+* .header {
+  position: sticky;
+  top: 0;
+  z-index: 50;
+  width: 100%;
+  overflow: hidden;
+}
+
+/* Фон с изображением */
+.background {
+  position: relative;
+  height: 100px;
+  /* Высота для десктопа */
+  background-image: url("../../../public/assets/images/portugal.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+/* Логотип */
+.logo img {
+  height: 70px;
+  width: 70px;
+  border-radius: 50%;
+  /* Круглый логотип */
+  object-fit: cover;
+  cursor: pointer;
+}
+
+/* Навигация */
+.nav {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  display: flex;
+  gap: 15px;
+  z-index: 10;
+}
+
+/* Ссылки навигации */
+.link {
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.linkActive {
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+/* Оверлей с текстом на фоне */
+.overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  z-index: 5;
+  color: white;
+  text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
+}
+
+/* Заголовок */
+.title {
+  font-size: 48px;
+  font-weight: bold;
+  margin: 0;
+}
+
+/* Подзаголовок */
+.subtitle {
+  font-size: 18px;
+  margin-top: 10px;
+}
+
+/* Медиазапросы для мобильных устройств */
+@media (max-width: 768px) {
+
+  /* Уменьшаем высоту фона для мобильных устройств */
+  .background {
+    height: 150px;
+  }
+
+  /* Логотип становится меньше */
+  .logo img {
+    height: 50px;
+    width: 50px;
+  }
+
+  /* Навигация на мобильных устройствах */
+  .nav {
+    top: 10px;
+    right: 10px;
+    gap: 10px;
+  }
+
+  .link {
+    font-size: 14px;
+    /* Уменьшаем размер шрифта */
+  }
+
+  .title {
+    font-size: 36px;
+    /* Уменьшаем размер заголовка */
+  }
+
+  .subtitle {
+    font-size: 16px;
+    /* Уменьшаем размер подзаголовка */
+  }
+}
+
+@media (max-width: 480px) {
+
+  /* Для самых маленьких экранов уменьшаем высоту фона */
+  .background {
+    height: 120px;
+  }
+
+  /* Логотип становится еще меньше */
+  .logo img {
+    height: 40px;
+    width: 40px;
+  }
+
+  /* Подгоняем навигацию */
+  .nav {
+    top: 10px;
+    right: 5px;
+    gap: 8px;
+  }
+
+  .link {
+    font-size: 12px;
+    /* Уменьшаем размер шрифта еще больше */
+  }
+
+  .title {
+    font-size: 30px;
+    /* Еще меньше заголовок */
+  }
+
+  .subtitle {
+    font-size: 14px;
+    /* Еще меньше подзаголовок */
+  }
+}
