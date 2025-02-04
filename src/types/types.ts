@@ -16,4 +16,10 @@ export interface Bed {
   roomId: number;
 }
 
-
+export interface CartItemBed {
+  id: number;
+  entryDate: string;
+  departureDate: string;
+  bed: Bed;
+  cartId: number;
+}

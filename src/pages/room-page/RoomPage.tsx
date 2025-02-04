@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import instance from "../../lib/axios";
 import { useParams } from "react-router-dom";
 import { Room } from "../../types/types";
+import BookingForm from "../../components/booking-form/BookingForm";
 
 export default function RoomPage() {
   const { id } = useParams();
@@ -33,6 +34,8 @@ export default function RoomPage() {
         <li key={bed.id}>
           <p>{bed.type}</p>
           <p>{bed.number}</p>
+
+          <BookingForm id={bed.id} />
         </li>
       ))}
     </div>
