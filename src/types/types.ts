@@ -15,3 +15,5 @@ export interface Bed {
   price: number;
   roomId: number;
 }
+
+

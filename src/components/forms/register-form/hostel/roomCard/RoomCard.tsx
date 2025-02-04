@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import { useNavigate } from "react-router-dom";
 
 interface ExtraCardProps {
   title: string;
@@ -10,7 +9,7 @@ interface ExtraCardProps {
 
 const ExtraCard: React.FC<ExtraCardProps> = ({ title, description, imageUrl, price }) => {
   const [quantity, setQuantity] = useState(1);
-  const navigate = useNavigate();
+
 
   const handleChangeQuantity = (amount: number) => {
     setQuantity((prevQuantity) => Math.max(1, prevQuantity + amount));
@@ -28,7 +27,7 @@ const ExtraCard: React.FC<ExtraCardProps> = ({ title, description, imageUrl, pri
   const isButtonDisabled = quantity <= 0;
 
   return (
-    <div style={styles.card}>
+    <div>
       <img src={imageUrl} alt={title} style={styles.image} />
       <h3>{title}</h3>
       <p>{description}</p>

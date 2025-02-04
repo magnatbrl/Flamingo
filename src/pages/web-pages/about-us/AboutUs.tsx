@@ -1,5 +1,5 @@
 import React from 'react';
-import styles from './Aboutus.module.css';
+import styles from './AboutUs.module.css';
 
 const Aboutus: React.FC = () => {
     return (

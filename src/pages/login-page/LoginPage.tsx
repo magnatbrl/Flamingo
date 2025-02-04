@@ -1,5 +1,5 @@
-import { Route, Routes, useLocation, useNavigate } from "react-router-dom";
-import styles from "./loginPage.module.css";
+import { Route, Routes, useNavigate } from "react-router-dom";
+import styles from "./LoginPage.module.css";
 import RegisterForm from "../../components/forms/register-form/RegisterForm";
 import LoginForm from "../../components/forms/login-form/LoginForm";
 import Cart from "../../components/cart/Cart";

@@ -1,13 +1,14 @@
 
 import React, { useState, useEffect } from "react";
 import { NavLink, useNavigate } from "react-router-dom";
-import styles from "./header.module.css";
+import styles from "./Header.module.css";
 import BurgerMenu from "../burger-menu/BurgerMenu";
 
 import { useAuth } from "../../hooks/useAuth";
 
 const Header: React.FC = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  // @ts-ignore
   const [isMobileView, setIsMobileView] = useState(window.innerWidth <= 768);
   const navigate = useNavigate();
 
@@ -67,8 +68,8 @@ const Header: React.FC = () => {
                 >
                   Rooms management
                 </NavLink> : null}
-              {/* <button onClick={logout}>Log out</button> */}
-              <NavLink onClick={logout} className={({ isActive }) => (isActive ? styles.linkActive : styles.link)}>Log out</NavLink>
+              <button onClick={logout}>Log out</button>
+
             </>
             : <NavLink to={"loginpage"} className={({ isActive }) => (isActive ? styles.linkActive : styles.link)}>Login</NavLink>}
         </nav>

@@ -1,4 +1,4 @@
-import styles from "./myButton.module.css";
+import styles from "./MyButton.module.css";
 import classNames from "classnames";
 
 interface IMyButtonProps {

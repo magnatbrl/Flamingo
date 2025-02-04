@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from "react";
 import styles from "./Cart.module.css";
-import { useNavigate } from "react-router-dom";
 import instance from "../../lib/axios";
 import { Room } from "../../types/types";
 
@@ -30,13 +29,13 @@ const Cart: React.FC = () => {
       ) : (
         <>
           <ul className={styles.list}>
-            {cartItems.map((cartItem) => (
+            {cartItems.map((cartItem ) => (
               <li key={cartItem?.id} className={styles.item}>
-                <p>Entry date: {cartItem?.entryDate}</p>
+                {/* <p>Entry date: {cartItem?.entryDate}</p>
                 <p>Departure date: {cartItem?.departureDate}</p>
                 <p>Room number: {cartItem?.bed.roomId}</p>
                 <p>Bed number: {cartItem?.bed.id}</p>
-                <p>Bed price: {cartItem?.bed.price}</p>
+                <p>Bed price: {cartItem?.bed.price}</p> */}
               </li>
             ))}
           </ul>

@@ -2,7 +2,7 @@
 import React, { useState } from "react";
 import { useLocation, useNavigate } from "react-router-dom";
 import { useCart } from "../../context/cartContext";
-import styles from "./checkoutPage.module.css";
+import styles from "./CheckoutPage.module.css";
 
 const CheckoutPage: React.FC = () => {
   const { state } = useLocation();

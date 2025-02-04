@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { Routes, Route, useLocation, useNavigate } from "react-router-dom";
+import { Routes, Route } from "react-router-dom";
 import Header from "./components/header/Header";
 import SplashScreen from "./components/splash-screen/SplashScreen";
 import CookieConsentModal from "./components/cookie-consent-modul/CookieConsentModal";
@@ -18,6 +18,7 @@ import Contacts from "./pages/web-pages/contacts/Contacts";
 import Privacypolicy from "./pages/web-pages/privacy-policy/PrivacyPolicy";
 import RoomsPage from "./pages/rooms-page/RoomsPage";
 import RoomPage from "./pages/room-page/RoomPage";
+import Footer from "./components/footer/Footer";
 const App: React.FC = () => {
   const [showSplashScreen, setShowSplashScreen] = useState(true);
   const [showCookieConsent, setShowCookieConsent] = useState(false);
@@ -31,8 +32,7 @@ const App: React.FC = () => {
   const handleAcceptCookies = () => {
     setShowCookieConsent(false);
   };
-  const navigate = useNavigate();
-  const location = useLocation();
+
   return (
     <>
       {showSplashScreen && <SplashScreen onClose={() => setShowSplashScreen(false)} />}
@@ -46,7 +46,6 @@ const App: React.FC = () => {
                 <Route path="/" element={<HomePage />} />
                 <Route path="/register" element={<RegisterForm />} />
                 <Route path="/login" element={<LoginForm />} />
-
                 <Route path="/" element={<Layout />}>
                   <Route path="loginpage" element={<LoginPage />} />
                   {/* <Route path="/bets/:id" element={<BedsPage />} /> */}
@@ -63,6 +62,7 @@ const App: React.FC = () => {
               </Routes>
             </div>
           </main>
+          <Footer />
         </>
       )}
     </>

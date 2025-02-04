@@ -28,7 +28,7 @@ const ExtraCard: React.FC<ExtraCardProps> = ({ title, description, imageUrl, pri
   const isButtonDisabled = quantity <= 0;
 
   return (
-    <div style={styles.card}>
+    <div>
       <img src={imageUrl} alt={title} style={styles.image} />
       <h3>{title}</h3>
       <p>{description}</p>

@@ -1,6 +1,6 @@
 
 import { Link } from "react-router-dom";
-import styles from "./homePage.module.css";
+import styles from "./HomePage.module.css";
 import { useEffect, useState } from "react";
 import instance from "../../lib/axios";
 import { Room } from "../../types/types";

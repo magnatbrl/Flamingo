@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { useNavigate } from 'react-router-dom';
-import styles  from './profilePage.module.css';
+import styles  from './ProfilePage.module.css';
 
 
 
@@ -76,7 +76,7 @@ const ProfilePage: React.FC = () => {
     }
   }, [navigate]);
 
-
+  // @ts-ignore
   const handleSendMessage = (message: string) => {
     const newMessage = {
       user: 'user',

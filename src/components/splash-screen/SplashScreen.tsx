@@ -1,6 +1,6 @@
 // src/components/SplashScreen.js
 import React, { useEffect } from 'react';
-import './splashscreen.css'
+import './SplashScreen.css'
 // Типизация пропсов
 interface SplashScreenProps {
     onClose: () => void; // Функция, которая вызывается при закрытии

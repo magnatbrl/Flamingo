@@ -1,7 +1,7 @@
 
 import { NavLink } from "react-router-dom";
 import { FaFacebook, FaTwitter, FaInstagram, FaLinkedin, FaEnvelope, FaPhone } from "react-icons/fa"; // Импорт дополнительных иконок
-import styles from './footer.module.css';
+import styles from './Footer.module.css';
 
 export default function Footer() {
   return (

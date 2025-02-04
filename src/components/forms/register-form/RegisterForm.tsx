@@ -1,8 +1,7 @@
 import { useState } from 'react';
-import { useNavigate } from 'react-router-dom';
 import * as Yup from 'yup';
 import { useFormik } from 'formik';
-import "./registerform.css";
+import "./RegisterForm.css";
 import instance from '../../../lib/axios';
 import { AxiosError } from 'axios';
 const schema = Yup.object({
@@ -13,7 +12,6 @@ const schema = Yup.object({
   password: Yup.string().min(8, "Password needs to be more than 8 characters!").required("Password is required!"),
 });
 const RegisterForm = () => {
-  const navigate = useNavigate();
   const [errorMessage, setErrorMessage] = useState<string | null>(null);
   const formik = useFormik({
     initialValues: {
@@ -28,10 +26,10 @@ const RegisterForm = () => {
       setErrorMessage(null);
       try {
 
-        const regRes = await instance.post("/auth/register", values, {
+        instance.post("/auth/register", values, {
           headers: { 'Content-Type': 'application/json' },
         })
-        const newUser = regRes.data()
+
 
       } catch (error) {
         if (error instanceof AxiosError) {
