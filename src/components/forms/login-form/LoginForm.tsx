@@ -4,8 +4,9 @@ import * as Yup from 'yup';
 import { useFormik } from 'formik';
 import instance from '../../../lib/axios';
 import { AxiosError } from 'axios';
-import './LoginForm.css';
 import { useAuth } from '../../../hooks/useAuth';
+import styles from "./LoginForm.module.css";
+
 const schema = Yup.object({
   userEmail: Yup.string().required("Username is required!"),
   password: Yup.string()
@@ -44,8 +45,8 @@ const LoginForm = () => {
     },
   });
   return (
-    <div className="main-content">
-      <div className="login-form">
+
+      <div className= {styles.loginForm}>
         <h2>Login</h2>
         <form onSubmit={formik.handleSubmit}>
           <input
@@ -55,7 +56,7 @@ const LoginForm = () => {
             value={formik.values.userEmail}
             onChange={formik.handleChange}
           />
-          {formik.errors.userEmail && <div className="error">{formik.errors.userEmail}</div>}
+          {formik.errors.userEmail && <div className= {styles.error}>{formik.errors.userEmail}</div>}
           <input
             type="password"
             name="password"
@@ -64,11 +65,11 @@ const LoginForm = () => {
             onChange={formik.handleChange}
           />
           {formik.errors.password && <span>{formik.errors.password}</span>}
-          <button type="submit" className="form-button">Login</button>
+          <button type="submit" className={styles.formButton}>Login</button>
         </form>
-        {errorMessage && <div className="error">{errorMessage}</div>}
+        {errorMessage && <div className={styles.error}>{errorMessage}</div>}
       </div>
-    </div>
+   
   );
 };
 export default LoginForm;

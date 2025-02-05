@@ -1,6 +1,4 @@
-/* Стили для форм */
-.login-form,
-.register-form {
+.registerForm {
     max-width: 400px;
     margin: 2rem auto;
     padding: 2rem;
@@ -9,22 +7,22 @@
     box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
 }
 
-.login-form h2,
-.register-form h2 {
+
+.registerForm h2 {
     text-align: center;
     color: #e78be2;
     margin-bottom: 1rem;
 }
 
-.login-form label,
-.register-form label {
+
+.registerForm label {
     display: block;
     font-weight: bold;
     margin-bottom: 0.5rem;
 }
 
-.login-form input,
-.register-form input {
+
+.registerForm input {
     width: 100%;
     padding: 0.5rem;
     margin-bottom: 1rem;
@@ -33,27 +31,28 @@
 }
 
 .error {
-    color: red;
+    color: rgb(178, 24, 24)
 }
 
-.form-button {
+.formButton {
     background-color: #e78be2;
-    /* Цвет фона */
     color: white;
-    /* Цвет текста */
     padding: 10px 20px;
-    /* Внутренние отступы */
     border: none;
-    /* Убираем границу */
     border-radius: 5px;
-    /* Закругление углов */
     cursor: pointer;
     font-size: 12px;
     margin-top: 10px;
     margin-left: 140px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
 
+.formButton:hover {
+    background-color: #2f0f40;
+    transform: scale(1.05);
+}
 
-    /* Размер текста */
-    transition: background-color 0.3s ease;
-    /* Плавный переход цвета */
+.formButton:active {
+    background-color: #a17bd6;
+    transform: scale(0.95);
 }

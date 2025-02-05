@@ -1,4 +1,4 @@
-import styles from "../homePage/homePage.module.css";
+import styles from "../../app.module.css";
     const MainPage: React.FC = () => {
     return (
         <div  className={styles.maincontent}>
