@@ -1,12 +1,12 @@
 import React, { useState, useEffect } from "react";
-import { useNavigate } from "react-router-dom";
+// import { useNavigate } from "react-router-dom";
 import { useCart } from "../../context/cartContext";
 import styles from "./CheckoutPage.module.css";
 import instance from "../../lib/axios";
 
 const CheckoutPage: React.FC = () => {
-  const { cart, clearCart } = useCart();
-  const navigate = useNavigate();
+  const {  clearCart } = useCart();
+  // const navigate = useNavigate();
   const [selectedPayment, setSelectedPayment] = useState<string | null>(null);
   const [showForm, setShowForm] = useState(false);
   const [cartItems, setCartItems] = useState<any[]>([]);
