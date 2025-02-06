@@ -4,6 +4,7 @@ import { useState } from "react";
 import * as Yup from 'yup';
 import instance from "../../lib/axios";
 import { useNavigate } from "react-router-dom";
+import styles from "./BedsFrom.module.css";
 
 
 const schema = Yup.object({
@@ -51,9 +52,9 @@ const BedsForm = ({ roomId }: BedsFormProps) => {
     },
   });
   return (
-    <div className="main-content">
-      <div className="login-form">
-        <h2>Add bed</h2>
+    <>
+      <div className={styles.addBed}>
+      <h2 className={styles.h2}>Add bed</h2>
         <form onSubmit={formik.handleSubmit}>
           <input
             type="text"
@@ -78,11 +79,11 @@ const BedsForm = ({ roomId }: BedsFormProps) => {
             onChange={formik.handleChange}
           />
           {formik.errors.price && <span>{formik.errors.price}</span>}
-          <button type="submit" className="form-button">Add</button>
+          <button type="submit" className={styles.button}>Add</button>
         </form>
         {errorMessage && <div className="error">{errorMessage}</div>}
       </div>
-    </div>
+    </>
   );
 };
 export default BedsForm;

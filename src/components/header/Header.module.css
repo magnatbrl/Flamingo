@@ -74,6 +74,20 @@
   margin-top: 10px;
 }
 
+
+.logoutBtn{
+  color: white;
+  text-decoration: none;
+  border: 0;
+  font-size: 14px;
+  font-weight: 500;
+  background-color: transparent;
+}
+
+.logoutBtn:hover{
+  cursor: pointer;
+}
+
 /* Медиазапросы для мобильных устройств */
 @media (max-width: 768px) {
 

@@ -1,9 +1,9 @@
 import { useFormik } from "formik";
 import { useState } from "react";
-
 import * as Yup from 'yup';
 import instance from "../../lib/axios";
 import { useNavigate } from "react-router-dom";
+import styles from "./RoomForm.module.css";
 
 const schema = Yup.object({
   number: Yup.string().required("Room number is required!"),
@@ -15,7 +15,7 @@ const RoomsForm = () => {
   const [errorMessage, setErrorMessage] = useState<string | null>(null);
   const navigate = useNavigate();
 
-  
+
   const formik = useFormik({
     initialValues: {
       number: '',
@@ -42,9 +42,9 @@ const RoomsForm = () => {
     },
   });
   return (
-    <div className="main-content">
-      <div className="login-form">
-        <h2>Add room</h2>
+    <>
+      <div className={styles.addRoom}>
+      <h2 className={styles.h2}>Add room</h2>
         <form onSubmit={formik.handleSubmit}>
           <input
             type="text"
@@ -61,13 +61,11 @@ const RoomsForm = () => {
             value={formik.values.type}
             onChange={formik.handleChange}
           />
-    
-
-          <button type="submit" className="form-button">Add</button>
+          <button type="submit" className={styles.button}>Add</button>
         </form>
         {errorMessage && <div className="error">{errorMessage}</div>}
       </div>
-    </div>
+    </>
   );
 };
 export default RoomsForm;

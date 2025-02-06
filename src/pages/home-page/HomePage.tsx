@@ -1,6 +1,6 @@
 
 import { Link } from "react-router-dom";
-import styles from "./HomePage.module.css";
+import styles from "./homePage.module.css";
 import { useEffect, useState } from "react";
 import instance from "../../lib/axios";
 import { Room } from "../../types/types";
@@ -21,7 +21,6 @@ const HomePage: React.FC = () => {
 
   return (
     <div className={styles.container}>
-
       <h2 className={styles.title}>Available Rooms</h2>
       <div className={styles.cardContainer}>
         {rooms.map((room) => (
@@ -30,7 +29,6 @@ const HomePage: React.FC = () => {
             <h2 className={styles.roomTitle}>{room.type}</h2>
             <p className={styles.description}>{room?.description}</p>
             <p className={styles.price}>Price: ${room?.price}</p>
-
           </Link>
         ))}
       </div>

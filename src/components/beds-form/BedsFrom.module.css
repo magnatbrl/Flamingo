@@ -1,0 +1,39 @@
+.addBed {
+  display: grid;
+  align-items: center;
+  gap: 10px; /* Расстояние между элементами */
+}
+
+.h2{
+  font-size: 1.5rem;
+  margin: 10px 0;
+  padding: 0 10px;
+  color: #007bff;
+}
+
+.addBed input {
+  padding: 8px;
+  margin: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.addBed .button {
+  padding: 8px 12px;
+  margin: 10px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.addBed .button:hover {
+  background-color: #0056b3;
+}
+
+.error {
+  color: red;
+  font-size: 12px;
+  margin-top: 5px;
+}

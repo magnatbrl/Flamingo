@@ -18,9 +18,6 @@ root.render(
       </CartProvider >
     </AuthProvider>
   </HashRouter>
-
-
-
 );
 
 

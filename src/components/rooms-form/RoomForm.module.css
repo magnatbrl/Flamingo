@@ -1,0 +1,33 @@
+.addRoom {
+  display: flex;
+  align-items: center;
+  margin: 0 37px;
+  gap: 10px; /* Расстояние между элементами */
+}
+
+.addRoom input {
+  padding: 8px;
+  margin: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.addRoom .button {
+  padding: 8px 12px;
+  margin: 10px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.addRoom .button:hover {
+  background-color: #0056b3;
+}
+
+.error {
+  color: red;
+  font-size: 12px;
+  margin-top: 5px;
+}

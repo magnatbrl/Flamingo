@@ -2,6 +2,7 @@
   padding: 20px;
   max-width: 1200px;
   margin: 0 auto;
+  min-height: 100vh;
 }
 .title {
   font-size: 2rem;
@@ -9,11 +10,13 @@
   color: #333;
 }
 .cardContainer {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
   gap: 20px;
 }
 .card {
+  min-width: 500px;
   background-color: #fff;
   border: 10px solid #E095D4;
   border-radius: 20px;
@@ -51,6 +54,51 @@
   font-weight: bold;
   margin-bottom: 10px;
   padding: 0 10px;
+  color: #333;
+  text-align: center;
+}
+
+
+
+.servicesCard {
+  flex: 1;
+  max-width: 400px;
+  background-color: #fff;
+  border: 10px solid #E095D4;
+  border-radius: 20px;
+  overflow: hidden;
+  text-decoration: none;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.servicesCard:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+.servicesImage {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+.servicesTitle {
+  text-align: center;
+  font-size: 1.5rem;
+  margin: 10px 0;
+  padding: 10 10px;
+  color: #FF00A6;
+}
+.servicesDescription {
+  text-align: center;
+  font-size: 1rem;
+  margin: 10px 0;
+  padding: 10 10px;
+  color: #060606;
+}
+.servicesPrice {
+  font-size: 1rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+  padding: 10 10px;
   color: #333;
   text-align: center;
 }

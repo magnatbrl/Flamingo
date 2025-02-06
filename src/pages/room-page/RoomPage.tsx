@@ -24,7 +24,7 @@ export default function RoomPage() {
 
   return (
     <div>
-      <h2> </h2>
+      <h2></h2>
       <img src={room?.image} alt={room?.type} />
       <h2>{room?.type}</h2>
       <p>{room?.description}</p>
@@ -34,7 +34,6 @@ export default function RoomPage() {
         <li key={bed.id}>
           <p>{bed.type}</p>
           <p>{bed.number}</p>
-
           <BookingForm id={bed.id} />
         </li>
       ))}

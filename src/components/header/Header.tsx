@@ -68,7 +68,7 @@ const Header: React.FC = () => {
                 >
                   Rooms management
                 </NavLink> : null}
-              <button onClick={logout}>Log out</button>
+              <button className={styles.logoutBtn} onClick={logout}>Log out</button>
 
             </>
             : <NavLink to={"loginpage"} className={({ isActive }) => (isActive ? styles.linkActive : styles.link)}>Login</NavLink>}
