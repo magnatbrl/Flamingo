@@ -2,6 +2,7 @@ import { Outlet } from "react-router-dom";
 import styles from './layout.module.css'
 
 
+
 export default function Layout() {
 
   return (
@@ -12,7 +13,7 @@ export default function Layout() {
         <Outlet />
       </main>
 
-      {/* <Footer /> */}
+    
     </>
   );
 }
