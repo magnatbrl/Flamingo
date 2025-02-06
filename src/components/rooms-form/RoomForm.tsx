@@ -43,8 +43,8 @@ const RoomsForm = () => {
   });
   return (
     <>
-      <div className={styles.addRoom}>
-      <h2 className={styles.h2}>Add room</h2>
+      <div className={styles.container}>
+      <h2 className={styles.title}>Add room</h2>
         <form onSubmit={formik.handleSubmit}>
           <input
             type="text"
@@ -61,7 +61,7 @@ const RoomsForm = () => {
             value={formik.values.type}
             onChange={formik.handleChange}
           />
-          <button type="submit" className={styles.button}>Add</button>
+          <button type="submit" className={styles.btn}>Add</button>
         </form>
         {errorMessage && <div className="error">{errorMessage}</div>}
       </div>

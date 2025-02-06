@@ -87,7 +87,7 @@ const Cart: React.FC = () => {
 
             ))}
           </ul>
-          <button className={styles.clearButton} onClick={clearCart}> Clear cart</button>
+          <button className={styles.clearButton} onClick={clearCart}>Clear cart</button>
           <div className={styles.summary}>
             <h2  className={styles.totalPrice}>Total price: ${totalPrice}</h2>
             <button className={styles.checkoutButton} onClick={handleCheckout}>

@@ -1,29 +1,47 @@
-.addRoom {
-  display: flex;
-  align-items: center;
-  margin: 0 37px;
-  gap: 10px; /* Расстояние между элементами */
+.container {
+  font-family: Arial, sans-serif;
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: rgb(228, 204, 234);
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: left;
 }
 
-.addRoom input {
+.title {
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: #333;
+  text-align: center;
+}
+
+.container input {
   padding: 8px;
   margin: 10px;
   border: 1px solid #ccc;
   border-radius: 5px;
 }
 
-.addRoom .button {
-  padding: 8px 12px;
-  margin: 10px;
-  background-color: #007bff;
+.btn {
+  background-color: #EE99E6;
   color: white;
   border: none;
-  border-radius: 5px;
+  padding: 8px 12px;
+  font-size: 14px;
   cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s ease, transform 0.2s ease;
 }
 
-.addRoom .button:hover {
-  background-color: #0056b3;
+.btn:hover {
+  background-color: #2f0f40;
+  transform: scale(1.05);
+}
+
+.btn:active {
+  background-color: #a17bd6;
+  transform: scale(0.95);
 }
 
 .error {
