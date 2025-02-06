@@ -26,7 +26,7 @@ const CheckoutPage: React.FC = () => {
   }, []);
 
   return (
-    <div>
+    <div className={styles.checkoutContainer}>
       <h2>Bookings</h2>
       <ul>
         {checkoutInfoItems.map((item) => (
