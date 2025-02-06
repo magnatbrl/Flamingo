@@ -46,15 +46,15 @@ export default function RoomsList() {
       <h2 className={styles.title}>Rooms</h2>
         <ul className={styles.cardContainer}>
           {rooms.map((room) => (<li key={room.id} className={styles.card}>
-            <p>Type: {room.type}</p>
-            <p>Number: {room.number}</p>
+            <p>Type room: {room.type}</p>
+            <p>Number room: {room.number}</p>
             <button className={styles.removeBtn} onClick={() => handleDeleteRoom(room.id)}>Delete Room</button>
             <p className={styles.p}>Beds:</p>
             <ul className={styles.bedsContainer}>
               {room.beds.map(
                 (bed) => <li key={bed.id} className={styles.cardBed}>
-                  <p>Type: {bed.type}</p>
-                  <p>Number: {bed.number}</p>
+                  <p>Type bed: {bed.type}</p>
+                  <p>Number bed: {bed.number}</p>
                   <button className={styles.removeBtn} onClick={() => handleDeleteBed(bed.id)}>Delete Bed</button>
                 </li>
               )}

@@ -59,6 +59,8 @@ const Cart: React.FC = () => {
 
 
   function handleCheckout() {
+
+    
     navigate("/checkout");
   }
 
@@ -89,9 +91,9 @@ const Cart: React.FC = () => {
           </ul>
           <button className={styles.clearButton} onClick={clearCart}>Clear cart</button>
           <div className={styles.summary}>
-            <h2  className={styles.totalPrice}>Total price: ${totalPrice}</h2>
+            <h2 className={styles.totalPrice}>Total price: ${totalPrice}</h2>
             <button className={styles.checkoutButton} onClick={handleCheckout}>
-            To pay
+              Book
             </button>
           </div>
         </>
